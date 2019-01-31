@@ -1,0 +1,436 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+//header部分
+header {
+    width: 100%;
+    height: 1.257142rem;
+    background: #4997f9;
+    ul {
+        padding: 0;
+        margin: 0;
+        padding-lefT: 2%;
+        padding-right: 2%;
+        vertical-align: middle;
+        width: 100%;
+        height: 1.257142rem;
+        display: -webkit-flex;
+        line-height: 1.257142rem;
+        color: #fff;
+        font-size: 0.428571rem;
+        li {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            list-style: none;
+            font-size:0.428571rem;
+            img {
+                width: 1.071428rem;
+                height: 1.071428rem;
+            }
+        }
+        li {
+            -webkit-flex: 1;
+            text-align: left;
+        }
+        li:nth-child(3) {
+            font-size:0.285714rem;
+            .add_span {
+                display: inline-block;
+                font-size: 0.428571rem;
+            }
+
+        }
+    }
+}
+
+//底部导航样式
+footer {
+    width: 100%;
+    height: 1.257142rem;
+    border-top: 1px solid #dfdfe1;
+    background: #fff;
+    ul {
+        height: 100%;
+        display: -webkit-flex;
+        a {
+            -webkit-flex: 1;
+            color: #000;
+        }
+        li {
+
+            text-align: center;
+            font-size: 0.357142rem;
+            span {
+                display: block;
+            }
+        }
+        .active {
+            span {
+                color: #4997f9;
+            }
+            color: #4997f9;
+        }
+    }
+}
+//--主体部分
+#main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+//搜索框
+.searchBox {
+    width: 100%;
+    height: 1.4rem;
+    background: #fff;
+    line-height: 1.4rem;
+    text-align: center;
+    position: relative;
+    input {
+        display: inline-block;
+        height: 0.771428rem;
+        width: 95%;
+        border-radius: 0.142857rem;
+        background: #edeef0;
+        bordeR: none;
+        text-align: center;
+    }
+    span {
+        position: absolute;
+        left: 42%;
+    }
+    .searchSpan {
+        left: 25%;
+    }
+}
+
+//--section--
+section {
+    flex: 1;
+    width: 100%;
+    overflow-y: scroll;
+    background: #f7f7f9;
+
+}
+//--隐藏滚动条且实现滚动效果
+section::-webkit-scrollbar {
+    display: none;
+}
+//--第一个消息
+.message {
+    width: 100%;
+    height: auto;
+    .default {
+        background: #f0f1f3;
+        border-bottom: 1px solid #d7d8da;
+        dd {
+            border: none;
+        }
+    }
+    dl {
+        width: 100%;
+        display: -webkit-flex;
+        padding: 0.228571rem 0.342857rem;
+        background:#fff;
+        color:#000;
+        dt {
+            width: 1.428571rem;
+            height: 1.428571rem;
+            margin-right: 0.328571rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        dd {
+            height: 100%;
+            -webkit-flex: 1;
+            border-bottom: 1px solid #d7d8da;
+            overflow: hidden;
+            padding-bottom: 0.385714rem;
+            p {
+                width: 100%;
+                text-align: left;
+                position: relative;
+                padding-top: 0.142857rem;
+
+                span {
+                    position: absolute;
+                    right: 0.142857rem;
+                }
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+//第二个联系人
+.person {
+    ul {
+        border-top: 1px solid #dfdfe1;
+        border-bottom: 1px solid #dfdfe1;
+        font-size: 0.428571rem;
+        padding: 0 0 0.285714rem;
+        background: #f7f7f9;
+        li {
+            width: 100%;
+            padding: 0.357142rem 0.428571rem;
+            border-bottom: 1px solid #dfdfe1;
+            position: relative;
+            background: #fff;
+            span {
+                position: absolute;
+                right: 0.428571rem;
+            }
+        }
+
+    }
+    //中间导航页
+    .middle_nav {
+        display: -webkit-flex;
+        background: #fff;
+        border-top: none;
+        font-size: 0.314285rem;
+        padding: 0;
+
+        a {
+            display: inline-block;
+            height: 100%;
+            -webkit-flex: 1;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            border: none;
+            li {
+                border: none;
+            }
+        }
+        .middle_nav_active {
+            color: #5bb2e7;
+            border-bottom: 2px solid #5bb2e7;
+        }
+    }
+}
+
+//--联系人页面--
+.friend,
+.group,
+.sheBei,
+.tongXunLu {
+    background: #fff;
+    ul {
+        border: none;
+        padding: 0;
+        li {
+            bordeR: none;
+            padding-left: 0.714285rem;
+            position: relative;
+            font-size:0.4rem;
+            span {
+                display: inline-block;
+                position: absolute;
+                left: 0.142857rem;
+                font-size: 0.4rem;
+            }
+            .spanActive:before {
+                content: "\e524";
+                font-size: 0.4rem;
+            }
+            em {
+                position: absolute;
+                right: 0.142857rem;
+                font-size: 0.214285rem;
+                color: #C0C0C0;
+            }
+        }
+    }
+    dl:last-child dd:last-child {
+        border-bottom: 1px solid #d7d8da;
+    }
+    dl {
+        width: 100%;
+        display: -webkit-flex;
+        padding: 0 0.342857rem;
+        background: #fff;
+
+        dt {
+            width: 1.428571rem;
+            height: 1.428571rem;
+            margin: 0.214285rem 0.142857rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        dd {
+            height: 100%;
+            -webkit-flex: 1;
+            border-top: 1px solid #d7d8da;
+            overflow: hidden;
+            padding: 0.214285rem 0.142857rem;
+            p:first-child {
+                color: #000;
+            }
+            p {
+                width: 100%;
+                text-align: left;
+                position: relative;
+                padding-top: 0.142857rem;
+                color: #787878;
+                span {
+                    position: absolute;
+                    right: 0.142857rem;
+                }
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+    }
+}
+//--联系人页面的公众号--
+.gongZhongHao {
+    ul {
+        border: none;
+        padding: 0;
+
+        li {
+            padding: 0;
+
+            span {
+                display: block;
+                width: 100%;
+                padding: 0.071428rem 0.428571rem;
+                background: #f7f7f9;
+                position: static;
+            }
+            p {
+                display: -webkit-flex;
+                height: 1.285714rem;
+                line-height: 1.285714rem;
+                vertical-align: middle;
+                padding-left:0.428571rem;
+                img {
+                    width: 0.771428rem;
+                    height: 0.671428rem;
+                    margin: 0.285714rem 0;
+                }
+                em {
+                    display: block;
+                    -webkit-flex: 1;
+                    padding-left: 0.142857rem;
+                }
+            }
+        }
+    }
+}
+//--联系人页面的通讯录--
+.tongXunLu {
+    ul {
+        li {
+            padding-left: 0.428571rem;
+            span {
+                display: inline-block;
+                position: absolute;
+                right: 0.428571rem;
+                font-size: 0.4rem;
+                text-align: right;
+            }
+            .spanActive:before {
+                content: "\e524";
+                font-size: 0.4rem;
+            }
+            em {
+                position: absolute;
+                right: 1rem;
+                margin-top: 0.042857rem;
+                color: #C0C0C0;
+            }
+        }
+    }
+
+}
+//--联系人页面的设备--
+.sheBei {
+    dl {
+        dd {
+            border: none;
+        }
+    }
+    dl:last-child dd:last-child {
+        border: none;
+    }
+}
+.DT {
+    background: #f7f7f9;
+    ul {
+        height: 100%;
+        display: -webkit-flex;
+        padding: 0 0 0.385714rem;
+        border-bottom: 1px solid #dfdfe1;
+        background: #fff;
+        margin-bottom: 0.571428rem;
+        li {
+            -webkit-flex: 1;
+            text-align: center;
+            font-size: 0.357142rem;
+            span {
+                display: block;
+            }
+        }
+        .iconfont {
+            font-size: 0.642857rem;
+        }
+        li:nth-child(1) span {
+            color: #f3d269;
+        }
+        li:nth-child(2) span {
+            color: #d76d5d;
+        }
+        li:nth-child(3) span {
+            color: #f3d269;
+        }
+        .active {
+            color: #4997f9;
+        }
+    }
+    ul:nth-child(2) {
+        display: block;
+        border: none;
+        padding: 0 0.428571rem;
+        li {
+            display: -webkit-flex;
+            height: 1.328571rem;
+            line-height: 1.328571rem;
+            vertical-align: middle;
+            img {
+                width: 0.785714rem;
+                height: 0.785714rem;
+                margin-right: 0.428571rem;
+                margin-top: 0.357142rem;
+            }
+            p {
+                -webkit-flex: 1;
+                border-bottom: 1px solid #dfdfe1;
+                position: relative;
+                text-align: left;
+                color: #000;
+                span {
+                    position: absolute;
+                    right: 0.428571rem;
+                    top: 0;
+                    color: #bbbbbb;
+                }
+            }
+        }
+    }
+}

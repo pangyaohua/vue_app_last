@@ -1,0 +1,434 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+header {
+  width: 100%;
+  height: 1.257142rem;
+  background: #4997f9;
+}
+header ul {
+  padding: 0;
+  margin: 0;
+  padding-lefT: 2%;
+  padding-right: 2%;
+  vertical-align: middle;
+  width: 100%;
+  height: 1.257142rem;
+  display: -webkit-flex;
+  line-height: 1.257142rem;
+  color: #fff;
+  font-size: 0.428571rem;
+}
+header ul li {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  list-style: none;
+  font-size: 0.428571rem;
+}
+header ul li img {
+  width: 1.071428rem;
+  height: 1.071428rem;
+}
+header ul li {
+  -webkit-flex: 1;
+  text-align: left;
+}
+header ul li:nth-child(3) {
+  font-size: 0.285714rem;
+}
+header ul li:nth-child(3) .add_span {
+  display: inline-block;
+  font-size: 0.428571rem;
+}
+footer {
+  width: 100%;
+  height: 1.257142rem;
+  border-top: 1px solid #dfdfe1;
+  background: #fff;
+}
+footer ul {
+  height: 100%;
+  display: -webkit-flex;
+}
+footer ul a {
+  -webkit-flex: 1;
+  color: #000;
+}
+footer ul li {
+  text-align: center;
+  font-size: 0.357142rem;
+}
+footer ul li span {
+  display: block;
+}
+footer ul .active {
+  color: #4997f9;
+}
+footer ul .active span {
+  color: #4997f9;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+.searchBox {
+  width: 100%;
+  height: 1.4rem;
+  background: #fff;
+  line-height: 1.4rem;
+  text-align: center;
+  position: relative;
+}
+.searchBox input {
+  display: inline-block;
+  height: 0.771428rem;
+  width: 95%;
+  border-radius: 0.142857rem;
+  background: #edeef0;
+  bordeR: none;
+  text-align: center;
+}
+.searchBox span {
+  position: absolute;
+  left: 42%;
+}
+.searchBox .searchSpan {
+  left: 25%;
+}
+section {
+  flex: 1;
+  width: 100%;
+  overflow-y: scroll;
+  background: #f7f7f9;
+}
+section::-webkit-scrollbar {
+  display: none;
+}
+.message {
+  width: 100%;
+  height: auto;
+}
+.message .default {
+  background: #f0f1f3;
+  border-bottom: 1px solid #d7d8da;
+}
+.message .default dd {
+  border: none;
+}
+.message dl {
+  width: 100%;
+  display: -webkit-flex;
+  padding: 0.228571rem 0.342857rem;
+  background: #fff;
+  color: #000;
+}
+.message dl dt {
+  width: 1.428571rem;
+  height: 1.428571rem;
+  margin-right: 0.328571rem;
+}
+.message dl dt img {
+  width: 100%;
+  height: 100%;
+}
+.message dl dd {
+  height: 100%;
+  -webkit-flex: 1;
+  border-bottom: 1px solid #d7d8da;
+  overflow: hidden;
+  padding-bottom: 0.385714rem;
+}
+.message dl dd p {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  padding-top: 0.142857rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.message dl dd p span {
+  position: absolute;
+  right: 0.142857rem;
+}
+.person ul {
+  border-top: 1px solid #dfdfe1;
+  border-bottom: 1px solid #dfdfe1;
+  font-size: 0.428571rem;
+  padding: 0 0 0.285714rem;
+  background: #f7f7f9;
+}
+.person ul li {
+  width: 100%;
+  padding: 0.357142rem 0.428571rem;
+  border-bottom: 1px solid #dfdfe1;
+  position: relative;
+  background: #fff;
+}
+.person ul li span {
+  position: absolute;
+  right: 0.428571rem;
+}
+.person .middle_nav {
+  display: -webkit-flex;
+  background: #fff;
+  border-top: none;
+  font-size: 0.314285rem;
+  padding: 0;
+}
+.person .middle_nav a {
+  display: inline-block;
+  height: 100%;
+  -webkit-flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border: none;
+}
+.person .middle_nav a li {
+  border: none;
+}
+.person .middle_nav .middle_nav_active {
+  color: #5bb2e7;
+  border-bottom: 2px solid #5bb2e7;
+}
+.friend,
+.group,
+.sheBei,
+.tongXunLu {
+  background: #fff;
+}
+.friend ul,
+.group ul,
+.sheBei ul,
+.tongXunLu ul {
+  border: none;
+  padding: 0;
+}
+.friend ul li,
+.group ul li,
+.sheBei ul li,
+.tongXunLu ul li {
+  bordeR: none;
+  padding-left: 0.714285rem;
+  position: relative;
+  font-size: 0.4rem;
+}
+.friend ul li span,
+.group ul li span,
+.sheBei ul li span,
+.tongXunLu ul li span {
+  display: inline-block;
+  position: absolute;
+  left: 0.142857rem;
+  font-size: 0.4rem;
+}
+.friend ul li .spanActive:before,
+.group ul li .spanActive:before,
+.sheBei ul li .spanActive:before,
+.tongXunLu ul li .spanActive:before {
+  content: "\e524";
+  font-size: 0.4rem;
+}
+.friend ul li em,
+.group ul li em,
+.sheBei ul li em,
+.tongXunLu ul li em {
+  position: absolute;
+  right: 0.142857rem;
+  font-size: 0.214285rem;
+  color: #C0C0C0;
+}
+.friend dl:last-child dd:last-child,
+.group dl:last-child dd:last-child,
+.sheBei dl:last-child dd:last-child,
+.tongXunLu dl:last-child dd:last-child {
+  border-bottom: 1px solid #d7d8da;
+}
+.friend dl,
+.group dl,
+.sheBei dl,
+.tongXunLu dl {
+  width: 100%;
+  display: -webkit-flex;
+  padding: 0 0.342857rem;
+  background: #fff;
+}
+.friend dl dt,
+.group dl dt,
+.sheBei dl dt,
+.tongXunLu dl dt {
+  width: 1.428571rem;
+  height: 1.428571rem;
+  margin: 0.214285rem 0.142857rem;
+}
+.friend dl dt img,
+.group dl dt img,
+.sheBei dl dt img,
+.tongXunLu dl dt img {
+  width: 100%;
+  height: 100%;
+}
+.friend dl dd,
+.group dl dd,
+.sheBei dl dd,
+.tongXunLu dl dd {
+  height: 100%;
+  -webkit-flex: 1;
+  border-top: 1px solid #d7d8da;
+  overflow: hidden;
+  padding: 0.214285rem 0.142857rem;
+}
+.friend dl dd p:first-child,
+.group dl dd p:first-child,
+.sheBei dl dd p:first-child,
+.tongXunLu dl dd p:first-child {
+  color: #000;
+}
+.friend dl dd p,
+.group dl dd p,
+.sheBei dl dd p,
+.tongXunLu dl dd p {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  padding-top: 0.142857rem;
+  color: #787878;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.friend dl dd p span,
+.group dl dd p span,
+.sheBei dl dd p span,
+.tongXunLu dl dd p span {
+  position: absolute;
+  right: 0.142857rem;
+}
+.gongZhongHao ul {
+  border: none;
+  padding: 0;
+}
+.gongZhongHao ul li {
+  padding: 0;
+}
+.gongZhongHao ul li span {
+  display: block;
+  width: 100%;
+  padding: 0.071428rem 0.428571rem;
+  background: #f7f7f9;
+  position: static;
+}
+.gongZhongHao ul li p {
+  display: -webkit-flex;
+  height: 1.285714rem;
+  line-height: 1.285714rem;
+  vertical-align: middle;
+  padding-left: 0.428571rem;
+}
+.gongZhongHao ul li p img {
+  width: 0.771428rem;
+  height: 0.671428rem;
+  margin: 0.285714rem 0;
+}
+.gongZhongHao ul li p em {
+  display: block;
+  -webkit-flex: 1;
+  padding-left: 0.142857rem;
+}
+.tongXunLu ul li {
+  padding-left: 0.428571rem;
+}
+.tongXunLu ul li span {
+  display: inline-block;
+  position: absolute;
+  right: 0.428571rem;
+  font-size: 0.4rem;
+  text-align: right;
+}
+.tongXunLu ul li .spanActive:before {
+  content: "\e524";
+  font-size: 0.4rem;
+}
+.tongXunLu ul li em {
+  position: absolute;
+  right: 1rem;
+  margin-top: 0.042857rem;
+  color: #C0C0C0;
+}
+.sheBei dl dd {
+  border: none;
+}
+.sheBei dl:last-child dd:last-child {
+  border: none;
+}
+.DT {
+  background: #f7f7f9;
+}
+.DT ul {
+  height: 100%;
+  display: -webkit-flex;
+  padding: 0 0 0.385714rem;
+  border-bottom: 1px solid #dfdfe1;
+  background: #fff;
+  margin-bottom: 0.571428rem;
+}
+.DT ul li {
+  -webkit-flex: 1;
+  text-align: center;
+  font-size: 0.357142rem;
+}
+.DT ul li span {
+  display: block;
+}
+.DT ul .iconfont {
+  font-size: 0.642857rem;
+}
+.DT ul li:nth-child(1) span {
+  color: #f3d269;
+}
+.DT ul li:nth-child(2) span {
+  color: #d76d5d;
+}
+.DT ul li:nth-child(3) span {
+  color: #f3d269;
+}
+.DT ul .active {
+  color: #4997f9;
+}
+.DT ul:nth-child(2) {
+  display: block;
+  border: none;
+  padding: 0 0.428571rem;
+}
+.DT ul:nth-child(2) li {
+  display: -webkit-flex;
+  height: 1.328571rem;
+  line-height: 1.328571rem;
+  vertical-align: middle;
+}
+.DT ul:nth-child(2) li img {
+  width: 0.785714rem;
+  height: 0.785714rem;
+  margin-right: 0.428571rem;
+  margin-top: 0.357142rem;
+}
+.DT ul:nth-child(2) li p {
+  -webkit-flex: 1;
+  border-bottom: 1px solid #dfdfe1;
+  position: relative;
+  text-align: left;
+  color: #000;
+}
+.DT ul:nth-child(2) li p span {
+  position: absolute;
+  right: 0.428571rem;
+  top: 0;
+  color: #bbbbbb;
+}

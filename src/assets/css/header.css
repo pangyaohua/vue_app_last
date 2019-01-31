@@ -1,0 +1,231 @@
+@charset "UTF-8";
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.container-fluid {
+	padding: 0
+}
+
+.navbar-collapse {
+	border: none;
+	width: 100%;
+	z-index: 10110
+}
+
+body,
+html {
+	font-family: "微软雅黑"!important
+}
+
+.navbar-default .navbar-toggle {
+	border: none
+}
+
+.navbar-default .navbar-toggle:hover {
+	background-color: transparent
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+	background: #598ee6
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background: #fff
+}
+
+.header {
+	height: 8rem;
+	width: 100%
+}
+
+.header .navbar-default {
+	background-color: transparent;
+	margin-left: 2.94rem;
+	border: none;
+	color: #fff
+}
+
+.header .navbar-default .navbar-brand {
+	color: #fff;
+	margin-top: .15rem;
+	font-size: .48rem;
+	font-weight: 100
+}
+
+.header .navbar-default .navbar-nav>li>a {
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-size: .21rem
+}
+
+.header .navbar-default .navbar-nav {
+	margin-left: .7rem
+}
+
+.header .navbar-default .navbar-nav li {
+	margin-left: .7rem;
+	margin-top: .24rem
+}
+
+.header .navbar-default .navbar-nav li:first-of-type {
+	margin-left: 0
+}
+
+@media (max-width:768px) {
+	.header .navbar-default .navbar-nav,
+	.header .navbar-default .navbar-nav li {
+		margin-left: 0
+	}
+}
+
+.header .navbar-default .navbar-nav .active1 {
+	text-decoration: none
+}
+
+.header .navbar-default .navbar-nav .active1 a {
+	color: #0daeff
+}
+
+.header .headerNav {
+	color: #fff;
+	width: 13.34rem;
+	margin: 0 auto
+}
+
+.header .headerNav .TitleName {
+	float: left;
+	font-size: .5rem;
+	font-weight: 100;
+	margin-top: .6rem
+}
+
+.header .headerNav .IndexNav {
+	float: right
+}
+
+.header .headerNav .IndexNav li {
+	float: left;
+	line-height: .33rem;
+	margin-top: .52rem;
+	margin-left: .8rem;
+	font-size: .21rem
+}
+
+.header .headerNav .IndexNav li a {
+	text-decoration: none;
+	color: #fff
+}
+
+.header .headerNav .IndexNav li:first-of-type {
+	border-bottom: 1px solid #0daeff
+}
+
+.header .headerNav .IndexNav li:first-of-type a {
+	color: #0daeff
+}
+
+@media only screen and (max-width:767px) and (min-width:280px) {
+	.container-fluid>.navbar-collapse,
+	.container-fluid>.navbar-header,
+	.container>.navbar-collapse,
+	.container>.navbar-header {
+		margin: 0;
+		z-index: 100000000
+	}
+	.navbar-collapse {
+		position: fixed;
+		width: 100vw;
+		height: 100vh!important;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, .7)
+	}
+	.header .navbar-default {
+		margin-left: 0
+	}
+	.navbar-brand {
+		display: none
+	}
+	.header .navbar-default .navbar-nav>li>a {
+		font-size: 18px
+	}
+}
+
+@media only screen and (max-width:960px) and (min-width:280px) {
+	.header .navbar-default .navbar-nav li {
+		margin-left: 0
+	}
+	.navbar-collapse {
+		padding-left: 0
+	}
+}
+
+@media only screen and (min-width:1049px) and (max-width:1366px) {
+	.header .navbar-default .navbar-nav {
+		margin-left: .7rem
+	}
+}
+
+@media only screen and (min-width:1050px) {
+	.header .navbar-default .navbar-nav {
+		margin-left: .7rem
+	}
+}
+
+@media screen and (max-width:1000px) and (min-width:767px) {
+	.header .navbar-default .navbar-nav,
+	.header .navbar-default .navbar-nav li {
+		margin-left: 0
+	}
+}
+
+@media screen and (max-width:375px) {
+	.header .navbar-default .navbar-nav>li>a {
+		font-size: 14px
+	}
+}
