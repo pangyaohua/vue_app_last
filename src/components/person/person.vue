@@ -20,7 +20,7 @@
 			</router-link>
 		</ul>
 		<!--子路由部分-->
-		<router-view>
+		<router-view name="default">
 
 		</router-view>
 	</div>

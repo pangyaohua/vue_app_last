@@ -1,7 +1,7 @@
 <template>
 	<div id="main">
 
-      <div class="outter" :class="{'hideLeft':$route.path.split('/').length>2}">
+      <div class="outter" :class="{'hideLeft':isLeft}">
         <!--头部信息-->
         <header-nav></header-nav>
 
@@ -43,7 +43,8 @@
 			return {
 				"pageName": "消息",
         "enterAnimate":"",
-        "leaveAnimate":""
+        "leaveAnimate":"",
+        "isLeft":""
 			}
 		},
 		components: {
@@ -54,17 +55,30 @@
 		watch: {
 			// 监听 $route 为店内页设置不同的过渡效果
 			"$route" (to, from) {
+
+			  //只有在消息页面和消息详情页面，outter页才需有向左滑动隐藏的需要。
+        if(to.name=="item" || to.name=="message"){
+          if(to.path.split('/').length>2){
+            this.isLeft=true;
+          }else{
+            this.isLeft=false;
+          }
+        }
+
 				const toDepth = to.path.split("/").length;
 				const fromPath = from.path.split("/").length;
-        //动画效果
-        this.enterAnimate = toDepth > fromPath ? "animated fadeInRight" : "animated fadeInLeft"
-        this.leaveAnimate = toDepth > fromPath ? "animated fadeOutLeft" : "animated fadeOutRight"
 
 
-        // 从店面页进入店内页 需要对店内页重新设置离开动效 因为他们处于不同 name 的 router-view
-        if(toDepth === 4) {
-          this.leaveAnimate = "animated fadeOutRight"
-        }
+          //动画效果
+          this.enterAnimate = toDepth > fromPath ? "animated fadeInRight" : "animated fadeInLeft"
+          this.leaveAnimate = toDepth > fromPath ? "animated fadeOutLeft" : "animated fadeOutRight"
+
+          // 从店面页进入店内页 需要对店内页重新设置离开动效 因为他们处于不同 name 的 router-view
+          if(toDepth === 4) {
+            this.leaveAnimate = "animated fadeOutRight"
+          }
+
+
 
 			}
 		}
