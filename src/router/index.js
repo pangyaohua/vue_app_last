@@ -14,37 +14,34 @@ export default new Router({
 	routes: [{
 			path: '/',
 			name: 'message',
-			component: message,
-			children: [
-
-				{ path: "/", component: message,name:"消息" }
-
-			]
+      components: {
+        "default":message
+      }
 		},{
-    path: '/message/item',
+    path: '/message',
+    name: 'message',
+    components: {
+      "default":message
+    }
+  },{
+    path: '/msg/item/:personName',
     name: 'item',
-    component: item,
-    children: [
-
-      { path: "/", component: item,name:"详情" }
-
-    ]
+    components: {
+      "subPage":item
+    }
   },{
 			path: '/DT',
 			name: 'DT',
-			component: DT,
-			children: [
-
-				{ path: "/", component: DT,name:"动态" }
-
-			]
+      components:{
+			  "default":DT
+      }
 		},
 		{
 			path: "/person",
 			name: "person",
 			component: person,
 			children: [
-				{ path: "/", component: person.friend ,name:"联系人"},
+				{path: "/", component: person.friend ,name:"联系人"},
 				{path:"/person/group",component:person.group},
 				{path:"/person/friend",component:person.friend},
 				{path:"/person/sheBei",component:person.sheBei},
