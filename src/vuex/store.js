@@ -2,7 +2,11 @@ import Vue from "vue"
 import Vuex from "vuex"
 import mutations from "./mutation"
 Vue.use(Vuex)
-
+/*
+简述VueX的核心概念
+state(存储状态) mutation(通过调用显示方法改变状态值) Action Getter Module
+*
+* */
 const state = {
 	//--页面名称--
 	pageName: "消息",
@@ -16,9 +20,9 @@ const state = {
   itemTitle:"",
 	//消息列表的信息，重要重要--引入图片时需用require,?否则图片路径不对
 	messageList: [{
-			title: "小黄h",
+			title: "关于Vue的基础知识",
 			time: "下午03:34",
-			content: "就抠脚大汉副书记东方红",
+			content: "组件content",
 			imgSrc: require("../assets/images/person_03.png"),
 			className: "default"
 		},
